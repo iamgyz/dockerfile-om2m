@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t gyzheng/om2m:nscl .
+docker build -t iamgyz/om2m:nscl .

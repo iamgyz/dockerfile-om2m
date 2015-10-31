@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t gyzheng/om2m:gscl .
+docker build -t iamgyz/om2m:gscl .
