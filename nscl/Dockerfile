@@ -1,6 +1,6 @@
 # This is the Dockerfile for OM2M/NSCL version 0.8.0
 # Author: GYZHNEG <gyzheng@cs.nctu.edu.tw>
-# Build command: docker build -t gyzheng/om2m:nscl .
+# Build command: docker build -t iamgyz/om2m:nscl .
 
 # Base image, Get java7
 FROM develar/java
