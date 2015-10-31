@@ -5,12 +5,12 @@ Dockfile for building OM2M nscl/gscl images
 
 ### NSCL
 ```
-docker run -it -p 8080:8080 -v "$(pwd)/configuration":/NSCL/configuration iamgyz/om2m:nscl  
+docker run --rm -it -p 8080:8080 -v "$(pwd)/configuration":/NSCL/configuration iamgyz/om2m:nscl  
 ```
 
 ### GSCL
 ```
-docker run -it -p 8181:8181 -v "$(pwd)/configuration":/GSCL/configuration iamgyz/om2m:gscl  
+docker run --rm -it -p 8181:8181 -v "$(pwd)/configuration":/GSCL/configuration iamgyz/om2m:gscl  
 ```
 
 
