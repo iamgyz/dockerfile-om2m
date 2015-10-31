@@ -9,13 +9,11 @@ FROM develar/java
 MAINTAINER gyzheng <gyzheng@cs.nctu.edu.tw>
 
 # Install OM2M
-RUN wget http://ftp.yzu.edu.tw/eclipse/om2m/releases/0.8.0/OM2M-0.8.0.zip\
-   && unzip OM2M-0.8.0.zip\
-   && rm OM2M-0.8.0.zip\
-   && rm -rf /OM2M-0.8.0/NSCL
+COPY ./GSCL /GSCL
 
 # Define working directory.
-WORKDIR /OM2M-0.8.0/GSCL
+WORKDIR /GSCL
 
 # Define default command.
-CMD ["sh","start.sh"]
+ENTRYPOINT ["sh"]
+CMD ["start.sh"]
