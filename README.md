@@ -5,7 +5,7 @@ https://hub.docker.com/r/iamgyz/om2m
 
 ## Usage  
 
-### 1. Using default configuration  
+### 1. Using default configuration  (NOT RECOMMENDED! Since there are too many configurations for OM2M)
 If you just want to run from default configuration files in `NSCL(GSCL)/configuration`  
 
 #### NSCL  
@@ -13,10 +13,7 @@ If you just want to run from default configuration files in `NSCL(GSCL)/configur
 docker run --rm -it -p 8080:8080 iamgyz/om2m:nscl  
 ```
 #### GSCL  
-```
-docker run --rm -it -p 8181:8181 iamgyz/om2m:gscl  
-```
-
+You can't run GSCL in default because you need to specify the IP of NSCL in `configuration/config.ini`
 
 ### 2. Using custom configuration  
 Put your configuration directory in current path  
